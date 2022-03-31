@@ -16,14 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyd-MG-0Zv" customClass="GMSMapView">
-                                <rect key="frame" x="5" y="71" width="404" height="755"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yyd-MG-0Zv" customClass="GMSMapView">
+                                <rect key="frame" x="5" y="71" width="404" height="754"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yyd-MG-0Zv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8k2-C6-BdO"/>
+                            <constraint firstItem="Yyd-MG-0Zv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="QQS-rw-hvq"/>
+                            <constraint firstItem="Yyd-MG-0Zv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="iye-ow-7R9"/>
+                            <constraint firstItem="Yyd-MG-0Zv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v3K-9a-Giv"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Yyd-MG-0Zv" id="f5g-p0-Eb0"/>
